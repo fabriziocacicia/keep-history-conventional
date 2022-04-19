@@ -1,5 +1,5 @@
 # Keep History Conventional
-Keeps in the commits history only the ones that follow the Conventional Commit convention.
+Keeps in the commits history only the commits that follow the Conventional Commit convention.
 
 - Keep History Conventional: keeps in the commits history of the `main` branch only the commits that follows the [Conventional Commits][1] convention
 - Conventional PR Titles: checks that the title of PRs follows the [Conventional Commits][1] convention
