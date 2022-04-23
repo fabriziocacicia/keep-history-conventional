@@ -2,6 +2,11 @@ name: "Keep History Conventional"
 description: "Keeps in the commits history only the commits that follows the Conventional Commit convention."
 author: "mail@fabriziocacicia.com"
 
+inputs:
+  branch:
+    description: 'The branch to keep conventional'
+    required: false
+
 runs:
   using: "composite"
   steps:
@@ -19,6 +24,7 @@ runs:
       if: steps.check-conventional-commit.outcome != 'success'
       uses: fabriziocacicia/move-latest-commit-to-pr-action@v0.3.0
       with:
+        baseBranch: ${{ inputs.branch }}
         headBranch: keep_history_conventional
         prBody: |
           The commit $LATEST_COMMIT_HASH doesn't follow the [Conventional Commit convention](https://www.conventionalcommits.org/). 
