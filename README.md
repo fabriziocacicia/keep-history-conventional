@@ -1,5 +1,5 @@
 # Keep History Conventional
-Keeps in the commits history only the commits that follow the Conventional Commit convention.
+A Github Action that keeps in the commits history of a given branch only the commits that follow the Conventional Commit convention.
 
 ### Action inputs
 
