@@ -10,7 +10,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Workoround for Error: fatal: detected dubious ownership in repository at '/github/workspace'
+    - name: Workoround for Error: fatal: detected dubious ownership in repository at /github/workspace
       run: git config --global --add safe.directory /github/workspace
     - uses: actions/checkout@v3.3.0
       with:
