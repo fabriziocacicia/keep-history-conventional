@@ -1,5 +1,6 @@
 name: Keep History Conventional
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
