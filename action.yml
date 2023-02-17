@@ -22,7 +22,7 @@ runs:
       shell: bash
     - name: Move Latest Commit to PR
       if: steps.check-conventional-commit.outcome != 'success'
-      uses: fabriziocacicia/move-latest-commit-to-pr-action@v0.3.0
+      uses: fabriziocacicia/move-latest-commit-to-pr-action@v0.4.0-draft
       with:
         baseBranch: ${{ inputs.branch }}
         headBranch: keep_history_conventional
